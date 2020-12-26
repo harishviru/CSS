@@ -16,3 +16,14 @@ Background properties :
 
 
 6)background-size                 :contain,cover,auto
+
+
+ When using the shorthand property the order of the property values is:
+
+    background-color
+    background-image
+    background-repeat
+    background-attachment
+    background-position
+
+ex :             background:blue url("file location") no-repeat fixed top left;
