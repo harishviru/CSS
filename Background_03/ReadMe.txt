@@ -26,4 +26,4 @@ Background properties :
     background-attachment
     background-position
 
-ex :             background:blue url("file location") no-repeat fixed top left;
+ex :             background:blue url("file loca") no-repeat fixed top left;
