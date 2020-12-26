@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pseudo-class selectors -Part one</title>
+     <style>
+         /* :root*/
+      /* :root{
+          background-color:gold;
+      } */
+
+    /* :hover ,:focus */
+    p:hover {
+        background-color: yellow;
+     }    
+     input[name=fname]:focus{
+        width: 50%;
+        padding: 16px 10px;
+        box-sizing: border-box;
+        border: 4px solid #ccc;
+     }
+
+
+
+    /* :disabled ,:enabled*/
+     input[name=disname]:disabled{
+        width: 20%;
+        padding: 16px 10px;
+       background-color: gray;
+     }
+     input[name=enname]:enabled{
+        width: 20%;
+        padding: 16px 10px;
+       background-color: green;
+     }
+
+
+     /* :optional ,:required*/
+    input[name=Ioptional]:optional{
+        width: 20%;
+        padding: 16px 10px;
+       background-color:hotpink;
+     }
+     input[name=Irequired]:required{
+        width: 20%;
+        padding: 16px 10px;
+       background-color:lightseagreen;
+     }
+
+    /* :out-of-range ,:in-range*/
+    input[name=outOfRange]:out-of-range{
+        width: 20%;
+        padding: 16px 10px;
+       background-color:maroon;
+     }
+     input[name=inRange]:in-range{
+        width: 20%;
+        padding: 16px 10px;
+       background-color:navy;
+     }
+
+/* :valid ,:invalid*/
+   input[name=email]:valid{
+        width: 20%;
+        padding: 16px 10px;
+       background-color:lightgreen
+     }
+     input[name=email]:invalid{
+        width: 20%;
+        padding: 16px 10px;
+       background-color:red
+     }
+
+
+/* :read-only ,:read-write*/
+input[name=IreadOnly]:read-only{
+        width: 20%;
+        padding: 16px 10px;
+       background-color:lightslategrey
+     }
+     input[name=IreadWrite]:read-write{
+        width: 20%;
+        padding: 16px 10px;
+       background-color:yellow
+     }
+     /* :checked*/
+     input[type=checkbox]:checked{
+       height: 50px;
+       width: 50px;
+     }
+ 
+    /* :link, :active, :visted*/
+ /* unvisited link */
+ a:link {
+  color: #FF0000;
+}
+/* visited link */
+a:visited {
+  color: #00FF00;
+}
+/* selected link */
+a:active {
+  color: #0000FF;
+} 
+
+/* :empty,:lang,:not,:target */
+ p:empty {
+  background: #ff0000;
+} 
+p:lang(en) {
+  background: brown;
+} 
+/* default value of paragraph*/
+div#notId p{
+  color: #000000;
+}
+div#notId:not(p){
+ color: crimson;
+}
+div#targetId p:target {
+  border: 2px solid #D4D4D4;
+  background-color: #e5eecc;
+}
+
+</style>
+</head>
+<body>
+         <p>
+            Pseudo-class selectors :hover
+        </p>
+         <input type="text" name="fname" placeholder="Click Me To Get Focus"/><br>
+           
+         <input type="text" name="disname" placeholder="Disabled" disabled/> <br>
+         <input type="text" name="enname" placeholder="enabled" /> <br>
+
+         <input type="text" name="Ioptional" placeholder="optional" /> <br>
+         <input type="text" name="Irequired" placeholder="required"  required/> <br>
+
+
+         <input type="number" name="outOfRange" placeholder="out-of-range" max="3"/> <br>
+         <input type="number" name="inRange" placeholder="in-range" min="0" max="3"/> <br>
+
+         <input type="email" name="email" placeholder="email"/> <br>
+
+
+         <input type="text" name="IreadOnly" placeholder="read Only" readonly/> <br>
+         <input type="text" name="IreadWrite" placeholder="read write"/> <br>
+
+         <input type="checkbox" name="Icheckbox" checked/> <br>
+
+          <div>
+            <a href="https://www.google.com/" target="_blank">Google</a>
+            <a href="https://www.microsoft.com" target="_top">Microsoft</a>
+         </div>
+             <hr>
+             
+             <p></p>
+             <p lang="en">English</p>
+
+          <div id="notId">
+            <h1>This is a heading</h1>
+
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+            <div>This is some text in a div element.</div>                       
+          </div>
+
+        <div id="targetId">
+          <p><a href="#content1">Jump to content 1</a></p>
+          <p><a href="#content2">Jump to  content 2</a></p>
+                    
+          <p id="content1"><b>content 1...</b></p>
+          <p id="content2"><b>content 2...</b></p>
+        </div>
+</body>
+</html>

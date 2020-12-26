@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attribute selectors</title>
+    <style>
+     /*i)[attribute]  */
+     [target]{
+         font-size: 40px;
+         background-color: burlywood; 
+     }
+    /* ii)[attribute=value]  */
+    [target=_top]{
+         font-size:80px;
+        background-color: aquamarine;         
+     }
+
+     /* iii)[attribute~=value] // symbol(~)=tilde  */
+     [title~=one] {
+        border: 5px solid chocolate;
+      }
+
+      /* iv)[attribute|=value]    // symbol (|)=vertical bar*/
+      [class|=top] {
+        border: 10px solid crimson;
+      }
+      /* v) [attribute^=value]    (symbol(^)=caret)*/
+        h3[class^=hClass]{
+           background-color: darkgreen;
+        }
+      /* vi) [attribute$=value]*/   
+      h2[class$=dollar]{
+           background-color:dodgerblue;
+        }
+
+         /* vi) [attribute$=value]*/   
+      h6[class*=star]{
+           background-color:firebrick;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>CSS  [attribute]  && [attribute=value] Selector</h2>
+
+        <div>
+         <a href="https://www.google.com/" target="_blank">Google</a>
+         <a href="https://www.microsoft.com" target="_top">Microsoft</a>
+        </div>
+          <hr>
+        <h2>CSS  [attribute~=value] (symbol(~)=tilde  Selector)</h2>
+       <div>
+         <img src="CombinatorSelector_1_output.png" title="img one" width="150" height="150"></br></br></br>
+         <img src="CombinatorSelector_2_output.png" title="one" width="150" height="100"></br>
+         <img src="SimpleSelector_Output.png" title="imgone" width="150" height="100">  </br>
+      </div>
+   
+
+     <div>
+       <p class="top-text">Hello world!</p> 
+       <p class="topcontent">We are  learning CSS?</p>
+       <p class="top_content">We are  learning CSS?</p>
+     </div>
+     <h2> [attribute^=value]    (symbol(^)=caret)</h2>
+    
+     <div>
+        <h3 class="hClass">caret</h3>
+        <h3 class="hClass_you">caret</h3>
+        <h3 class="hClass-you">caret</h3>
+        <h3 class="hClassyou">caret</h3>
+     </div>
+     <h2> [attribute$=value]    (symbol($)=dollar)</h2>
+
+     <div>
+        <h2 class="dollar">dollar</h2>
+        <h2 class="h_dollar">dollar</h2>
+        <h2 class="h_dollar">dollar</h2>
+        <h2 class="hdollar">dollar</h2>
+
+     </div>
+     <h2> [attribute*=value]    (symbol(*)=star)</h2>
+
+     <div>
+        <h6 class="star jhasdx">star</h6>
+        <h6 class="starjhas">star</h6>
+        <h6 class="star_dollar">star</h6>
+        <h6 class="hdollar-star">star</h6>
+
+     </div>
+</body>
+</html>

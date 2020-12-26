@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Pseudo-elements selectors</title>
+    <style>
+    /* ::first-letter */
+    div::first-letter{
+        color: #ff0000;
+        font-size: xx-large;
+    }
+    /* ::first-line */
+   div p::first-line{
+        color: forestgreen;
+        font-size: xx-large;
+    }
+    /* ::after  */
+    h1::before {
+        content: "***********";
+    }
+    /* ::before  */
+    h2::after {
+        content: "***********";
+    }
+   /* ::selection */
+    h3::selection {
+        background-color: fuchsia;
+    }
+
+    </style>
+</head>
+<body>
+           <div>
+            Pseudo-elements selector :: first-letter
+           </div>
+          <div>
+               <p>
+                Pseudo-elements selector :: first-line
+                 
+               </p>
+          </div>
+          <h1> Pseudo-elements selector ::before</h1>
+          <h2> Pseudo-elements selector ::after</h2>
+          <h3> Pseudo-elements selector ::selection</h3>
+</body>
+</html>

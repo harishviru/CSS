@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Selectors- Combinator </title>
+    <style>
+      /*descendant selector (space)   */
+      div p{
+        background-color:brown;
+        color:white;
+        font-weight: bolder;
+        text-align: center;
+      }
+      /* ii)child selector (>)*/
+      span > p{
+        text-align: center;
+        background-color:chocolate;
+        color:black;
+      }
+      /*adjacent sibling selector (+)*/
+      code+span {
+        text-align: center;
+        background-color:darkgreen;
+        color:white;
+      }
+      /*general sibling selector (~)*/
+      code~p {
+        text-align: center;
+        background-color:aqua;
+        color:chocolate;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        #A combinator is something that explains the relationship between the
+        selectors.
+      </p>
+      <ul>
+        <li>i)descendant selector (space)</li>
+        <li>ii)child selector (>)</li>
+        <li>iii)adjacent sibling selector (+)</li>
+        <li>iv)general sibling selector (~)</li>
+      </ul>
+    </div> 
+                    <br/>
+            <h1 style="color: green;font-size: 25px;text-align: center;">Descendant Selector  (space)</h1>
+
+            <div>
+                <p>Paragraph 1 in the div.</p>
+                <p>Paragraph 2 in the div.</p>
+                <section><p>Paragraph 3 in the div.</p></section>
+                <p>Paragraph 4 in the div.</p>
+                <p>Paragraph 5 in the div.</p>
+              </div>
+              
+              <p>Paragraph 6. Not in a div.</p>
+              <p>Paragraph 7. Not in a div.</p>
+
+                    <hr>
+                    <h1 style="color: green;font-size: 25px;text-align: center;">child selector (>)</h1>
+
+                    <span>
+                        <p>Paragraph 11 in the span.</p>
+                        <p>Paragraph 12 in the span.</p>
+                        <section><p>Paragraph 13 in the span.Section.</p></section>
+                        <p>Paragraph 14 in the span.</p>
+                        <p>Paragraph 15 in the span.</p>
+                      </span>
+                      
+                      <p>Paragraph 16. Not in a span.</p>
+                      <p>Paragraph 17. Not in a span.</p>
+
+                      <hr>
+                      <h1 style="color: green;font-size: 25px;text-align: center;">adjacent sibling selector (+)</h1>
+  
+                       <code> 
+                         <span> Code 1 in code element </span>
+                         <span> Code 2 in code element</span>
+                         <span> Code 3 in code element</span>
+                         <span> Code 4 in code element</span>
+                       </code>
+                       <span> Code 5  outside code element</span>
+                       <span> Code 6 outside code element</span>
+
+                       <hr>
+                       <h1 style="color: green;font-size: 25px;text-align: center;">general sibling selector (~)</h1>
+                       <code> 
+                        <p> Code 1 in code element </p>
+                        <p> Code 2 in code element</p>
+                        <p> Code 3 in code element</p>
+                        <p> Code 4 in code element</p>
+                      </code>
+                      <p> Code 5  outside code element</p>
+                      <p> Code 6 outside code element</p>
+
+  </body>
+</html>
