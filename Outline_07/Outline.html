@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>outline Styles...........!</title>
+    <style>
+        p{
+        border: 5px solid  black;
+        outline-offset: 6px;
+        height: 100px;
+        width: 400px;
+        min-height: 50px;
+        max-height: 120px;
+        min-width: 200px;
+        max-width: 500px;
+        }
+      p.dotted {
+        outline-style: dotted;
+        outline-width: thin;
+        outline-color: blue;
+      }
+      p.dashed {
+          outline: 2px dashed brown;
+      }
+      p.solid {
+        outline: 2px solid bisque;
+      }
+      p.double {
+        outline: 2px double  firebrick;
+      }
+      p.groove {
+        outline: 2px groove indigo;
+      }
+      p.ridge {
+        outline: 2px ridge  seagreen;
+      }
+      p.inset {
+        outline: 2px inset lawngreen;
+      }
+      p.outset {
+        outline: 2px outset red;
+      }
+      p.none {
+        outline: 2px none salmon;
+        background-color: chocolate;
+      }
+      p.hidden {
+        outline: 2px hidden black;
+        background-color: cadetblue;
+      }
+      
+      p.outlineWidth {
+        border-width: thick;
+        border-style: solid;
+        border-color: blue;
+      }
+      /* shorthand form */
+      .short {
+        outline: 5px dashed blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="dotted">A dotted outline.</p>
+    <p class="dashed">A dashed outline.</p>
+    <p class="solid">A solid outline.</p>
+    <p class="double">A double outline.</p>
+    <p class="groove">A groove outline.</p>
+    <p class="ridge">A ridge outline.</p>
+    <p class="inset">An inset outline.</p>
+    <p class="outset">An outset outline.</p>
+    <p class="none">No outline.</p>
+    <p class="hidden">A hidden outline.</p>
+
+    <p class="outlineWidth">outline.......................!</p>
+    <p class="short">short</p>
+  </body>
+</html>
