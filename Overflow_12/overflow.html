@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Overflow</title>
+      <style>
+          /*text-overflow*/
+          p{
+              width: 100px;
+              height: 30px;
+              border: 2px solid teal;
+              white-space: nowrap;
+              overflow: hidden;/* visible,hidden,scroll,auto*/
+          }
+         #txt-overflow1{
+             text-overflow:clip ;
+         }
+         #txt-overflow2{
+             text-overflow:ellipsis ;
+         }
+        /* overflow ,overflow-x,overflow-y*/
+          .txtOflw1{
+            overflow: scroll;
+            height: 40px;
+          }
+          .txtOflw2{
+            overflow: hidden;
+            height: 40px;
+          }
+          .txtOflw3{
+            overflow: auto;
+            height: 40px;
+          }
+          .txtOflw4{
+            overflow-y: scroll;
+            height: 20px;
+            width: 100px;
+          }
+
+      </style>
+</head>
+<body>
+    <p id="txt-overflow1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa animi commodi voluptas vitae reprehenderit. Quas cum ab ex omnis voluptate veritatis. Eligendi accusantium facilis eveniet consequatur nobis, placeat totam maxime!</p>
+    <p id="txt-overflow2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa animi commodi voluptas vitae reprehenderit. Quas cum ab ex omnis voluptate veritatis. Eligendi accusantium facilis eveniet consequatur nobis, placeat totam maxime!</p>
+   <hr>
+     <div>
+           <p class="txtOflw1">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maiores laboriosam excepturi hic nihil. Eveniet expedita porro, amet et repellat nostrum illum itaque incidunt laudantium reiciendis, quis, repellendus cumque nesciunt.
+           </p>
+           <p class="txtOflw2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maiores laboriosam excepturi hic nihil. Eveniet expedita porro, amet et repellat nostrum illum itaque incidunt laudantium reiciendis, quis, repellendus cumque nesciunt.
+        </p>
+        <p class="txtOflw3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maiores laboriosam excepturi hic nihil. Eveniet expedita porro, amet et repellat nostrum illum itaque incidunt laudantium reiciendis, quis, repellendus cumque nesciunt.
+        </p>
+        <p class="txtOflw4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maiores laboriosam excepturi hic nihil. Eveniet expedita porro, amet et repellat nostrum illum itaque incidunt laudantium reiciendis, quis, repellendus cumque nesciunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maiores laboriosam excepturi hic nihil. Eveniet expedita porro, amet et repellat nostrum illum itaque incidunt laudantium reiciendis, quis, repellendus cumque nesciunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maiores laboriosam excepturi hic nihil. Eveniet expedita porro, amet et repellat nostrum illum itaque incidunt laudantium reiciendis, quis, repellendus cumque nesciunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maiores laboriosam excepturi hic nihil. Eveniet expedita porro, amet et repellat nostrum illum itaque incidunt laudantium reiciendis, quis, repellendus cumque nesciunt.
+
+        </p>
+     </div>
+    
+
+
+</body>
+</html>
