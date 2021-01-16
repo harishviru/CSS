@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>2D Transforms</title>
+     <style>
+         div{
+             width: 200px;
+             height: 200px;
+             border: 2px solid black;
+         }
+         /* translate(x,y)---->move from one position to another position*/
+         div#translate{
+             transform: translate(80px,10px);
+           /*  transform: translateX(80px);
+               transform: translateY(10px);*/
+             background-color: darkcyan;
+         }
+
+         /* rotate(deg) ---->rotate the angles*/
+         div#rotate{
+             transform:rotate(50deg) ;
+             background-color: chocolate;
+         }
+
+         /*scale---->Increase the sizes*/
+         div#scale{
+             transform: scale(2,1);
+           /*  transform: scaleX(2);
+               transform: scaleY(1);*/
+             background-color: orangered;
+         }
+
+         /*skew---->Increase or decrease the shapes*/
+         div#skew{
+             transform: skew(-20deg,40deg);
+           /*  transform: scaleX(20deg);
+               transform: scaleY(40deg);*/
+             background-color: orchid;
+         }
+       /*
+        matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+       */
+       div#matrix{
+        transform: matrix(1, -0.3, 0.1, 1, 200, 10);
+        background-color: palegreen;
+       }
+     </style>
+
+</head>
+<body>
+     <div id="translate"> </div>
+     <div id="rotate"> </div>
+     <div id="scale"> </div>
+     <div id="skew"> </div>
+     
+      <div id="matrix">
+
+     </div>
+</body>
+</html>
