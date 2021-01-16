@@ -16,3 +16,13 @@ i)Float   :left|right|none ;        [defVal:none]
 
 ex :
   background: rgba(76, 175, 80, 0.3) /* Green background with 30% opacity */ 
+
+iv)CSS Image Sprites
+
+.An image sprite is a collection of images put into a single image.
+.A web page with many images can take a long time to load and generates multiple server requests.
+.Using image sprites will reduce the number of server requests and save bandwidth.
+
+.By using background-position:width height;
+
+ex:  background: url('img_navsprites.gif') 0 0;
