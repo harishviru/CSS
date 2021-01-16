@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <title>Position and Z-index</title>
+        <style>
+           .template{
+             border :2px solid blueviolet;
+             height: 200px;
+             width: 200px;
+             text-align: center;
+           }
+           .relative{
+               position: relative;
+               top:30px ;
+               left: 20px;
+               background-color: coral;
+           }
+           
+           .absParent{
+             position: relative;
+              width: 300px;
+              height: 500px;
+              background-color: gray;
+              left:50%;
+              top:50%;
+           }
+           .absolute{
+               position: relative;
+               top:10px ;
+               left: 20px;
+               background-color: cyan;
+           }
+            .fixed{
+                 position: fixed;
+                 background-color: lightcoral;
+                 width: 80px;
+                 height: 40px;
+                 bottom: 10px;
+                 right: 10px;              
+            } 
+          .sticky{
+            position: sticky; 
+            width: 80%;
+            height: 30px;
+            top:0;
+            padding: 5px;
+            background-color: lightpink;
+            border: 2px solid rgb(38, 190, 38);
+          }
+        .pbottomFlow{
+                padding-bottom:1500px ;
+        }
+        img {
+             position: absolute;
+             border: 2px solid orange;
+             right: 30%;
+             bottom:0;
+             z-index:2;
+     }
+
+        </style>
+</head>
+<body>
+       <div class="template"> Static</div>
+
+       <div class="template relative">Relative</div>
+       <div class="absParent">
+              <div class="template absolute">Absolute</div>
+      </div>
+       
+      <div class="template fixed">
+                fixed
+      </div>
+
+      <div class="template sticky">
+        sticky
+      </div>
+       <div class="pbottomFlow">
+           <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!   
+        </p>
+        </div>
+<hr>
+        <h1>Z -index</h1>
+       <p style="position: relative;"> 
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, assumenda, voluptatem asperiores nam explicabo magni est corporis impedit laborum saepe ad aliquam ipsam sunt vitae sed ipsum in placeat consequatur?
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!   
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!   
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!   
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!   
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!   
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!   
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAgVBMVEX///8mJiYAAAAbGxtzc3PLy8sjIyMkJCQEBAQfHx/Pz88UFBQQEBAZGRkgICD7+/v29vaFhYVpaWnV1dXo6Oh8fHw6OjqRkZHe3t5XV1epqam4uLhPT0/p6emcnJzDw8NFRUUtLS2urq5JSUlkZGRTU1OioqKJiYmVlZU9PT2AgIASm0nPAAAEFklEQVR4nO3b63KqMBQFYNgoJhIuBUXxjlptff8HPODtQMUCM9WM2/X9amdwZrsMSQiJYQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwJvyg5zuKnQJoslHskrtjBlvwtF0/GZRDHaJJOVKzzZ7Pdv0PMtRZG4nY92FPc10JpTsmT/1pKLv3Vx3dc+wToW8+f4XniPCSHeFjxbFwr6bwJFFn4xT8H1jRDUJ5CRt+d4R/lbUJ3BqCwvdtT6Eb/gzp1kEGbEZ6C74AXwjaR5BdkOIqe6KH2CvWkSQoS/dFf+5LrWLwJQb3SX/udhrF0FPsRsc1g2HhCvi1x9UNwNPWpZVMW/OhsdQd8V/rn/TG9iuImcTDofDbUqkrHIQPcvXXfKfO7g/fmZh77v/b/jxdGhR8RLqaiz2Qcq3gkfb/s0l/YNSl8agPjTU+GDz0q2gVrcJ5IKFe2oLXvzk+p5hWRwVaH/3uuBAeYMhjk+Ok8IckSa/XRnFjilYPjHt3YYRZE1hS5/PKerJOta1L6jv7YY8lxXDSwZypbsUbcLLEiJVjwjv4HIvMJwBN3bpE1kOeg2dx0ZvprsQjc4LKKpmXGRtfponCo4LpY2tPK6PAc3t8zVl66C7DK2OayhqrbsMvWL7PSdIxV0Vi2x0pDfsEpeFv4NslkRvttUk91X83b+USdoq0WdRmhKldn0G826/qPv6U+vdqvhfn+oz6FLZ6z9iTai0GvLVIIPy2yir87DanmVN5UWjbe17E34ZLIUqjQT+G2YQkTNq9wl+GczJFO2mBPwyCHqmO2z1CX4Z5E/M1GqhnGEGHWl6320+wDCDXfagpNp0iwwziPJVgzZbCRhm4OfbbGyn+SMzwwyMRNqmKePGAyTHDNbH9wrWrGkIHDM4r6m7m4YhcMwguxlOXyYeGE02mrHMYHreiOS5y/qLmWZgeOdDGzY12Wr2Y1MzkwwW151ITlrfFHi2A/+65zBrCknNC4ZBKDlmYOwKP62k2S87sfshWSbLDIy0uEVVCnVYVo0Q40UqfiTAKIOo3M/1XEGfo+X4fxBBtO5Y5FSceOOSgV9xiMfLciAn/kzCbfLt5LvWq4/8cckgM7tp5Ee2lJaUvx14dF///cLFPG15jufSXJzXf890NXYbHG+tiIDVIYbIun/O+x4pGbWC3CCt7hPuc2J2uxWCpNXBth51+B1oyp4cqPn94Dj8TvYdjTfUbHyQNAwaLTe8omncoC24tOV5gOFimZCyq850nrsBKZwD6wT8vIEPFislXO82B1s6ZIXTN9m3NZh+rDwSSrnZXDnjOkoJkSaL7psEYJx6u2CwXO/2nTBMOuFwtJtG7E65AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/Oofl10tiIrNpFoAAAAASUVORK5CYII=" >
+        Because the image has a z-index of -1, it will be placed behind the text.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!   
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!   
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!   
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!   
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure id et deserunt officia. Non ab, quibusdam dignissimos consequuntur explicabo quidem cum libero officiis ad maiores optio nisi, voluptates sed!   
+
+    </p>
+
+
+
+
+</body>
+</html>
