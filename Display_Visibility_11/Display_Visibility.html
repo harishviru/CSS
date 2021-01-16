@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Visibility & Display</title>
+    <style>
+        /* visibility */
+        p{
+            visibility: visible;
+            border: 2px double seagreen;
+        }
+      /* Display*/
+        a{
+            display: block;
+            border: 2px solid red;
+            text-decoration: none;
+            padding: 6px;
+            width: 200px;
+            height: 60px;
+            text-align: center;
+        }
+         .inline{
+             display: inline;
+             border: 2px solid teal;
+             width: 100px;/* width and height will not work for inline*/
+             height:50px ;
+         }
+
+         .inline-block{
+             display: inline-block;
+             border: 2px solid tomato;
+             width: 100px;
+             height:50px ;
+         }
+
+       .table{
+           display: table;
+           border:1px double blueviolet;
+           border-collapse: collapse;
+
+        }
+       .table .thead{
+            display:table-header-group;
+            background-color: brown;
+        }  
+       .table .tbody{
+            display: table-row-group;
+        }
+       
+        .table .thead .tr ,.table .tbody .tr{
+            display: table-row;
+        }
+       .table .thead .tr .td,.table .tbody .tr .td{
+            display:table-cell;
+        }
+
+      .tb-line{
+          display: inline-table;
+      }
+
+    </style>
+</head>
+<body>
+       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque cumque dolorem at excepturi eaque, delectus mollitia expedita quia perspiciatis culpa doloribus quos ex repellat aliquid. Natus neque in provident dolor.</p>
+       
+        <hr>
+        <a href="#">Home</a>
+        <a href="#">Contact Us</a>
+        <hr>
+        <div class="inline">
+            Lorem ipsum dolor sit 
+        </div>
+        <div class="inline">
+            Lorem ipsum dolor sit amet 
+        </div>
+        <hr>
+        <div class="inline-block">
+            Lorem ipsum dolor sit 
+        </div>
+        <div class="inline-block">
+            Lorem ipsum dolor sit amet 
+        </div>
+
+        <hr>
+
+         <div class="table tb-line">
+                  <div class="thead">
+                      <div class="tr">
+                           <div class="td">
+                               S.NO
+                           </div>
+                           <div class="td">
+                            EmpId
+                           </div>
+                          <div class="td">
+                            EmpName
+                          </div>
+                      </div>
+                  </div> 
+                  <div class="tbody">
+                    <div class="tr">
+                        <div class="td">
+                           101
+                        </div>
+                        <div class="td">
+                         T230
+                        </div>
+                       <div class="td">
+                         Gopi
+                       </div>
+                   </div>
+                   <div class="tr">
+                    <div class="td">
+                       102
+                    </div>
+                    <div class="td">
+                     T234
+                    </div>
+                   <div class="td">
+                     Roja
+                   </div>
+               </div>
+               <div class="tr">
+                <div class="td">
+                   105
+                </div>
+                <div class="td">
+                 T289
+                </div>
+               <div class="td">
+                 Ramesh
+               </div>
+           </div>
+                </div>
+         </div>
+
+         <div class="table tb-line">
+            <div class="thead">
+                <div class="tr">
+                     <div class="td">
+                         S.NO
+                     </div>
+                     <div class="td">
+                      EmpId
+                     </div>
+                    <div class="td">
+                      EmpName
+                    </div>
+                </div>
+            </div> 
+            <div class="tbody">
+              <div class="tr">
+                  <div class="td">
+                     101
+                  </div>
+                  <div class="td">
+                   T230
+                  </div>
+                 <div class="td">
+                   Gopi
+                 </div>
+             </div>
+             <div class="tr">
+              <div class="td">
+                 102
+              </div>
+              <div class="td">
+               T234
+              </div>
+             <div class="td">
+               Roja
+             </div>
+         </div>
+         <div class="tr">
+          <div class="td">
+             105
+          </div>
+          <div class="td">
+           T289
+          </div>
+         <div class="td">
+           Ramesh
+         </div>
+     </div>
+          </div>
+   </div>
+
+
+
+
+</body>
+</html>
