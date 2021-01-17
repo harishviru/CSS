@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+    <title>Resize ,var,calc,attr</title>
+      <style>
+      
+       :root {
+        --main-bg-color: coral;
+       --main-txt-color: green;
+       --main-padding: 8px;
+      }
+      /* resize ,overflow,var */
+      div#resize{
+           width: 280px;
+           height: 250px;
+           border: 2px solid teal;
+           color:   var(--main-txt-color);
+           padding: var(--main-padding);
+           background-color: var(--main-bg-color);
+           overflow: auto;
+           resize: both;
+       }
+       /*  cal,var*/
+       div#one{
+           width: calc(100% - 200px);
+            height: 200px;
+           border: 2px solid yellowgreen;
+           background-color: var(--main-bg-color);
+       }
+       a[href]::before{
+        content: attr(href);
+        border: 1px solid firebrick;
+        background-color:forestgreen ;
+       }
+
+      /* Gradients*/
+       .div{
+        height: 200px;
+        width: 200px;
+        text-align: center;
+        writing-mode: vertical-rl;
+        font-variant: small-caps;
+        font-weight: bolder;
+        font-size: x-large;
+        border: 2px solid black;
+       }
+       /* linear-gradient*/
+      div#two{
+        background-image: linear-gradient(red,green);
+      }
+      div#three{
+        background-image: linear-gradient(to right,red,green);
+      }
+      div#four{
+        background-image: linear-gradient(to bottom right,red,green);
+      }
+      div#five{
+        background-image: linear-gradient(to bottom left,red,green);
+      }
+      
+      div#six{
+        background-image: linear-gradient(120deg,red,green);
+      }
+     
+      div#seven{
+        background-image: repeating-linear-gradient(to right,red,green,blue);
+      }
+      /* radial-gradient*/
+      div#e8{
+        background-image: radial-gradient(red,yellow,green);
+      }
+      div#n9{
+        background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+      }
+      div#t10{
+        background-image: radial-gradient(farthest-corner at 60% 55%, red, yellow, black);
+      }
+      div#el11{
+        background-image:repeating-radial-gradient(red, yellow 10%, green 15%);;
+      }
+      /* border-image*/
+       div#brd1{
+        border: 10px solid transparent;
+        padding: 15px;
+        border-image-source: url(border.png) ;
+        border-image-slice: 40;
+        border-image-width: 1;
+        border-image-outset: 0;
+        border-image-repeat: stretch; 
+        /*
+         border-image: source slice width outset repeat;
+         border-image: url(border.png) 40  stretch;
+        */
+       }
+       div#brd2{
+        border: 10px solid transparent;
+        padding: 15px;
+        border-image: url(border.png) 40 stretch;
+       }
+       div#brd3{
+        border: 10px solid transparent;
+        padding: 10px;
+        border-image-source: url(border.png) ;
+        border-image-slice: 40;
+        border-image-width: 2;
+        border-image-outset: 1;
+        border-image-repeat: space; 
+       } 
+       body{
+           margin-bottom: 800px;
+       }
+      </style>
+   </head>
+<body>
+    
+    <div id="resize">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aliquid voluptate accusamus, sequi non repudiandae veniam porro nihil temporibus nam fugiat ipsam? Architecto, pariatur ut saepe sapiente optio eum magni?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aliquid voluptate accusamus, sequi non repudiandae veniam porro nihil temporibus nam fugiat ipsam? Architecto, pariatur ut saepe sapiente optio eum magni?
+   </div>
+   <hr>
+   <div  id="one">
+           <a href="https://github.com/harishviru/CSS">::::CSS</a>
+   </div>
+
+   <hr>
+   <h2>Gradients like Linear</h2>
+   <div class="div" id="two"> default</div> <br>
+   <div class="div" id="three">Left to Right</div><br>
+   <div class="div" id="four">top left to bottom right</div><br>
+   <div class="div" id="five">top right to bottom left</div><br>
+   <div class="div" id="six">Using Angle</div><br>
+   <div class="div" id="seven">Repeat Linear Gradient</div><br>
+
+   <hr>
+
+   <div class="div" id="e8">Radial Gradient 1</div><br>
+   <div class="div" id="n9">Radial Gradient 2</div><br>
+   <div class="div" id="t10">Radial Gradient 3</div><br>
+   <div class="div" id="el11">Radial Gradient 4</div><br>
+  <hr>
+
+   <div id="brd1">Border image 1</div> <br>
+   <div id="brd2">Border image 2</div><br>
+   <div id="brd3">Border image 3</div>
+</body>
+</html>
